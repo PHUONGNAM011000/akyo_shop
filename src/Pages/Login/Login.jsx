@@ -32,7 +32,7 @@ const useStyles = makeStyles((theme) => ({
   },
   image: {
     backgroundImage:
-      'url(https://binbadecor.com.vn/wp-content/uploads/2020/10/thi%E1%BA%BFt-k%E1%BA%BF-shop-qu%E1%BA%A7n-%C3%A1o-8.jpg)',
+      'url(https://binbadecor.com.vn/wp-content/uploads/2022/03/thiet-ke-shop-quan-ao-2.jpg)',
     backgroundRepeat: 'no-repeat',
     backgroundColor:
       theme.palette.type === 'light'
