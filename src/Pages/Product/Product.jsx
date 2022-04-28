@@ -1,6 +1,8 @@
 import { makeStyles } from '@material-ui/core';
 import React from 'react';
 import NavBar from '../../Components/NavBar/NavBar';
+import About from './About/About';
+import Description from './Description/Description';
 
 const useStyles = makeStyles((theme) => ({
   icon: {
@@ -19,6 +21,8 @@ const Product = () => {
   return (
     <>
       <NavBar classes={classes} />
+      <About />
+      <Description />
     </>
   );
 };
