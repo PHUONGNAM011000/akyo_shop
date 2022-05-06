@@ -1,12 +1,12 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
-import { DATA_PRODUCT } from '../../Data/product';
 import NavBar from '../../Components/NavBar/NavBar';
 import Footer from '../../Components/Footer/Footer';
 import Hero from './Hero/Hero';
 import About from './About/About';
 import ListProduct from './ListProduct/ListProduct';
+import { useSelector } from 'react-redux';
 
 const useStyles = makeStyles((theme) => ({
   icon: {
@@ -25,6 +25,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundPosition: 'center',
     padding: theme.spacing(8, 0, 6),
     color: 'white',
+    height: '300px',
 
     '& h1': {
       backgroundColor: 'rgba(0,0,0, 0.3)',
@@ -85,10 +86,23 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: 'space-around',
     marginBottom: '2rem',
   },
+  cart: {
+    cursor: 'pointer',
+  },
+  appBar: {
+    position: 'sticky',
+    top: '0',
+    zIndex: '100',
+
+    '& svg': {
+      cursor: 'pointer',
+    },
+  },
 }));
 
 export default function Home() {
   const classes = useStyles();
+  const productHome = useSelector((state) => state.home.productHome);
 
   return (
     <React.Fragment>
@@ -97,7 +111,7 @@ export default function Home() {
         <Hero classes={classes} />
         <Container className={classes.cardGrid} maxWidth="md">
           <About classes={classes} />
-          <ListProduct dataProduct={DATA_PRODUCT} classes={classes} />
+          <ListProduct dataProduct={productHome} classes={classes} />
         </Container>
       </main>
       <Footer classes={classes} />

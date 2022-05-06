@@ -4,18 +4,11 @@ export const DATA_PRODUCT = [
     name: 'Playsuit 2 dây cột nơ Oversized thêu hoa nhí [ZA10]',
     price: 400,
     images: {
-      image1:
-        'https://oversizedshop.com.vn/ovs/uploads/2022/02/DSC00524-scaled.jpg.webp',
-      image2:
-        'https://oversizedshop.com.vn/ovs/uploads/2022/02/DSC00537-150x150.jpg',
-      image3:
-        'https://oversizedshop.com.vn/ovs/uploads/2022/02/DSC00558-150x150.jpg',
-      image4:
-        'https://oversizedshop.com.vn/ovs/uploads/2022/02/DSC00489-150x150.jpg',
-      image5:
-        'https://oversizedshop.com.vn/ovs/uploads/2022/02/DSC00486-150x150.jpg',
-      image6:
-        'https://oversizedshop.com.vn/ovs/uploads/2022/02/DSC00524-150x150.jpg',
+      image1: 'https://oversizedshop.com.vn/ovs/uploads/2022/02/DSC00524',
+      image2: 'https://oversizedshop.com.vn/ovs/uploads/2022/02/DSC00537',
+      image3: 'https://oversizedshop.com.vn/ovs/uploads/2022/02/DSC00558',
+      image4: 'https://oversizedshop.com.vn/ovs/uploads/2022/02/DSC00489',
+      image5: 'https://oversizedshop.com.vn/ovs/uploads/2022/02/DSC00486',
     },
   },
 
@@ -25,18 +18,11 @@ export const DATA_PRODUCT = [
     price: 500,
 
     images: {
-      image1:
-        'https://oversizedshop.com.vn/ovs/uploads/2022/02/DSC00152-scaled.jpg.webp',
-      image2:
-        'https://oversizedshop.com.vn/ovs/uploads/2022/02/DSC00159-150x150.jpg',
-      image3:
-        'https://oversizedshop.com.vn/ovs/uploads/2022/02/DSC00121-150x150.jpg',
-      image4:
-        'https://oversizedshop.com.vn/ovs/uploads/2022/02/DSC00109-150x150.jpg',
-      image5:
-        'https://oversizedshop.com.vn/ovs/uploads/2022/02/DSC00118-150x150.jpg',
-      image6:
-        'https://oversizedshop.com.vn/ovs/uploads/2022/02/DSC00524-150x150.jpg',
+      image1: 'https://oversizedshop.com.vn/ovs/uploads/2022/02/DSC00152',
+      image2: 'https://oversizedshop.com.vn/ovs/uploads/2022/02/DSC00121',
+      image3: 'https://oversizedshop.com.vn/ovs/uploads/2022/02/DSC00109',
+      image4: 'https://oversizedshop.com.vn/ovs/uploads/2022/02/DSC00118',
+      image5: 'https://oversizedshop.com.vn/ovs/uploads/2022/02/DSC00159',
     },
   },
   {
@@ -45,18 +31,11 @@ export const DATA_PRODUCT = [
     price: 700,
 
     images: {
-      image1:
-        'https://oversizedshop.com.vn/ovs/uploads/2022/02/DSC00051-scaled.jpg.webp',
-      image2:
-        'https://oversizedshop.com.vn/ovs/uploads/2022/02/DSC00051-150x150.jpg',
-      image3:
-        'https://oversizedshop.com.vn/ovs/uploads/2022/02/DSC00094-150x150.jpg',
-      image4:
-        'https://oversizedshop.com.vn/ovs/uploads/2022/02/DSC00090-150x150.jpg',
-      image5:
-        'https://oversizedshop.com.vn/ovs/uploads/2022/02/DSC00079-150x150.jpg',
-      image6:
-        'https://oversizedshop.com.vn/ovs/uploads/2022/02/DSC00063-150x150.jpg',
+      image1: 'https://oversizedshop.com.vn/ovs/uploads/2022/02/DSC00051',
+      image2: 'https://oversizedshop.com.vn/ovs/uploads/2022/02/DSC00094',
+      image3: 'https://oversizedshop.com.vn/ovs/uploads/2022/02/DSC00090',
+      image4: 'https://oversizedshop.com.vn/ovs/uploads/2022/02/DSC00079',
+      image5: 'https://oversizedshop.com.vn/ovs/uploads/2022/02/DSC00063',
     },
   },
   {
@@ -65,18 +44,11 @@ export const DATA_PRODUCT = [
     price: 350,
 
     images: {
-      image1:
-        'https://oversizedshop.com.vn/ovs/uploads/2022/02/DSC00814-scaled.jpg.webp',
-      image2:
-        'https://oversizedshop.com.vn/ovs/uploads/2022/02/DSC00814-150x150.jpg',
-      image3:
-        'https://oversizedshop.com.vn/ovs/uploads/2022/02/DSC00812-150x150.jpg',
-      image4:
-        'https://oversizedshop.com.vn/ovs/uploads/2022/02/DSC00810-150x150.jpg',
-      image5:
-        'https://oversizedshop.com.vn/ovs/uploads/2022/02/DSC00771-150x150.jpg',
-      image6:
-        'https://oversizedshop.com.vn/ovs/uploads/2022/02/DSC00764-150x150.jpg',
+      image1: 'https://oversizedshop.com.vn/ovs/uploads/2022/02/DSC00814',
+      image2: 'https://oversizedshop.com.vn/ovs/uploads/2022/02/DSC00812',
+      image3: 'https://oversizedshop.com.vn/ovs/uploads/2022/02/DSC00810',
+      image4: 'https://oversizedshop.com.vn/ovs/uploads/2022/02/DSC00771',
+      image5: 'https://oversizedshop.com.vn/ovs/uploads/2022/02/DSC00764',
     },
   },
   {
@@ -85,16 +57,11 @@ export const DATA_PRODUCT = [
     price: 450,
 
     images: {
-      image1:
-        'https://oversizedshop.com.vn/ovs/uploads/2022/02/DSC00291-scaled.jpg.webp',
-      image2:
-        'https://oversizedshop.com.vn/ovs/uploads/2022/02/DSC00291-150x150.jpg',
-      image3:
-        'https://oversizedshop.com.vn/ovs/uploads/2022/02/DSC00289-150x150.jpg',
-      image4:
-        'https://oversizedshop.com.vn/ovs/uploads/2022/02/DSC00252-150x150.jpg',
-      image5:
-        'https://oversizedshop.com.vn/ovs/uploads/2022/02/DSC00318-150x150.jpg',
+      image1: 'https://oversizedshop.com.vn/ovs/uploads/2022/02/DSC00291',
+      image2: 'https://oversizedshop.com.vn/ovs/uploads/2022/02/DSC00289',
+      image3: 'https://oversizedshop.com.vn/ovs/uploads/2022/02/DSC00252',
+      image4: 'https://oversizedshop.com.vn/ovs/uploads/2022/02/DSC00318',
+      image5: 'https://oversizedshop.com.vn/ovs/uploads/2022/02/DSC00289',
     },
   },
   {
@@ -103,18 +70,11 @@ export const DATA_PRODUCT = [
     price: 600,
 
     images: {
-      image1:
-        'https://oversizedshop.com.vn/ovs/uploads/2022/02/DSC00235-scaled.jpg.webp',
-      image2:
-        'https://oversizedshop.com.vn/ovs/uploads/2022/02/DSC00235-150x150.jpg',
-      image3:
-        'https://oversizedshop.com.vn/ovs/uploads/2022/02/DSC00217-150x150.jpg',
-      image4:
-        'https://oversizedshop.com.vn/ovs/uploads/2022/02/DSC00181-150x150.jpg',
-      image5:
-        'https://oversizedshop.com.vn/ovs/uploads/2022/02/DSC00179-150x150.jpg',
-      image6:
-        'https://oversizedshop.com.vn/ovs/uploads/2022/02/DSC00164-150x150.jpg',
+      image1: 'https://oversizedshop.com.vn/ovs/uploads/2022/02/DSC00235',
+      image2: 'https://oversizedshop.com.vn/ovs/uploads/2022/02/DSC00217',
+      image3: 'https://oversizedshop.com.vn/ovs/uploads/2022/02/DSC00181',
+      image4: 'https://oversizedshop.com.vn/ovs/uploads/2022/02/DSC00179',
+      image5: 'https://oversizedshop.com.vn/ovs/uploads/2022/02/DSC00164',
     },
   },
   {
@@ -123,18 +83,11 @@ export const DATA_PRODUCT = [
     price: 520,
 
     images: {
-      image1:
-        'https://oversizedshop.com.vn/ovs/uploads/2022/01/749A7021-scaled.jpg.webp',
-      image2:
-        'https://oversizedshop.com.vn/ovs/uploads/2022/01/749A7021-150x150.jpg',
-      image3:
-        'https://oversizedshop.com.vn/ovs/uploads/2022/01/749A7018-150x150.jpg',
-      image4:
-        'https://oversizedshop.com.vn/ovs/uploads/2022/01/749A6998-150x150.jpg',
-      image5:
-        'https://oversizedshop.com.vn/ovs/uploads/2022/01/749A7053-150x150.jpg',
-      image6:
-        'https://oversizedshop.com.vn/ovs/uploads/2022/01/749A7072-150x150.jpg',
+      image1: 'https://oversizedshop.com.vn/ovs/uploads/2022/01/749A7021',
+      image2: 'https://oversizedshop.com.vn/ovs/uploads/2022/01/749A7018',
+      image3: 'https://oversizedshop.com.vn/ovs/uploads/2022/01/749A6998',
+      image4: 'https://oversizedshop.com.vn/ovs/uploads/2022/01/749A7053',
+      image5: 'https://oversizedshop.com.vn/ovs/uploads/2022/01/749A7072',
     },
   },
   {
@@ -143,18 +96,11 @@ export const DATA_PRODUCT = [
     price: 499,
 
     images: {
-      image1:
-        'https://oversizedshop.com.vn/ovs/uploads/2022/01/749A6429-scaled.jpg.webp',
-      image2:
-        'https://oversizedshop.com.vn/ovs/uploads/2022/01/749A6429-150x150.jpg',
-      image3:
-        'https://oversizedshop.com.vn/ovs/uploads/2022/01/749A6438-150x150.jpg',
-      image4:
-        'https://oversizedshop.com.vn/ovs/uploads/2022/01/749A6453-150x150.jpg',
-      image5:
-        'https://oversizedshop.com.vn/ovs/uploads/2022/01/749A6393-150x150.jpg',
-      image6:
-        'https://oversizedshop.com.vn/ovs/uploads/2022/01/749A6399-150x150.jpg',
+      image1: 'https://oversizedshop.com.vn/ovs/uploads/2022/01/749A6429',
+      image2: 'https://oversizedshop.com.vn/ovs/uploads/2022/01/749A6438',
+      image3: 'https://oversizedshop.com.vn/ovs/uploads/2022/01/749A6453',
+      image4: 'https://oversizedshop.com.vn/ovs/uploads/2022/01/749A6393',
+      image5: 'https://oversizedshop.com.vn/ovs/uploads/2022/01/749A6399',
     },
   },
   {
@@ -163,18 +109,11 @@ export const DATA_PRODUCT = [
     price: 720,
 
     images: {
-      image1:
-        'https://oversizedshop.com.vn/ovs/uploads/2022/01/749A5795-scaled.jpg.webp',
-      image2:
-        'https://oversizedshop.com.vn/ovs/uploads/2022/01/749A5795-150x150.jpg',
-      image3:
-        'https://oversizedshop.com.vn/ovs/uploads/2022/01/749A5778-150x150.jpg',
-      image4:
-        'https://oversizedshop.com.vn/ovs/uploads/2022/01/749A5732-150x150.jpg',
-      image5:
-        'https://oversizedshop.com.vn/ovs/uploads/2022/01/749A5758-150x150.jpg',
-      image6:
-        'https://oversizedshop.com.vn/ovs/uploads/2022/01/749A5765-150x150.jpg',
+      image1: 'https://oversizedshop.com.vn/ovs/uploads/2022/01/749A5795',
+      image2: 'https://oversizedshop.com.vn/ovs/uploads/2022/01/749A5778',
+      image3: 'https://oversizedshop.com.vn/ovs/uploads/2022/01/749A5732',
+      image4: 'https://oversizedshop.com.vn/ovs/uploads/2022/01/749A5758',
+      image5: 'https://oversizedshop.com.vn/ovs/uploads/2022/01/749A5765',
     },
   },
 ];

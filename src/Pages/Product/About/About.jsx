@@ -1,7 +1,6 @@
 import React from 'react';
 import classes from './About.module.css';
 import { AiFillHeart } from 'react-icons/ai';
-import Description from '../Description/Description';
 
 const About = (props) => {
   return (
@@ -10,38 +9,38 @@ const About = (props) => {
         <ul>
           <li>
             <img
-              src="https://oversizedshop.com.vn/ovs/uploads/2022/02/DSC00152-150x150.jpg"
+              src={`${props.product[0].images.image1}-150x150.jpg`}
               alt="#"
             />
           </li>
           <li>
             <img
-              src="https://oversizedshop.com.vn/ovs/uploads/2022/02/DSC00152-150x150.jpg"
+              src={`${props.product[0].images.image2}-150x150.jpg`}
               alt="#"
             />
           </li>
           <li>
             <img
-              src="https://oversizedshop.com.vn/ovs/uploads/2022/02/DSC00152-150x150.jpg"
+              src={`${props.product[0].images.image3}-150x150.jpg`}
               alt="#"
             />
           </li>
           <li>
             <img
-              src="https://oversizedshop.com.vn/ovs/uploads/2022/02/DSC00152-150x150.jpg"
+              src={`${props.product[0].images.image4}-150x150.jpg`}
               alt="#"
             />
           </li>
           <li>
             <img
-              src="https://oversizedshop.com.vn/ovs/uploads/2022/02/DSC00152-150x150.jpg"
+              src={`${props.product[0].images.image5}-150x150.jpg`}
               alt="#"
             />
           </li>
         </ul>
         <div className={classes.imgMain}>
           <img
-            src="https://oversizedshop.com.vn/ovs/uploads/2022/02/DSC00627-scaled.jpg.webp"
+            src={`${props.product[0].images.image1}-scaled.jpg.webp`}
             alt="#"
           />
         </div>

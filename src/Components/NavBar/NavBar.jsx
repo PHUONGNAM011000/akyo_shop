@@ -9,10 +9,21 @@ import {
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import LocalMallIcon from '@material-ui/icons/LocalMall';
+import { useState } from 'react';
+import Cart from '../Cart/Cart';
+import { useSelector } from 'react-redux';
 
 const NavBar = ({ classes }) => {
+  const [openCart, setOpenCart] = useState(false);
+  const productCart = useSelector((state) => state.cart.productCart);
+
+  const qualityProduct = productCart.reduce((acc, item) => {
+    return acc + item.quality;
+  }, 0);
+
   return (
-    <>
+    <div className={classes.appBar}>
+      {openCart && <Cart setOpenCart={setOpenCart} />}
       <CssBaseline />
       <AppBar position="relative">
         <Toolbar>
@@ -39,12 +50,16 @@ const NavBar = ({ classes }) => {
             Phuong Nam
           </Typography>
           <FavoriteIcon fontSize="large" className={classes.icon} />
-          <Badge badgeContent={4} color="secondary">
-            <ShoppingCartIcon fontSize="large" />
+          <Badge
+            badgeContent={qualityProduct}
+            color="secondary"
+            onClick={() => setOpenCart(true)}
+          >
+            <ShoppingCartIcon fontSize="large" className={classes.cart} />
           </Badge>
         </Toolbar>
       </AppBar>
-    </>
+    </div>
   );
 };
 

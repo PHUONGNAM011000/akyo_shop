@@ -20,6 +20,11 @@
   font-weight: normal;
 }
 
+.description_info--container h3:hover {
+  color: #0e4861;
+  cursor: default;
+}
+
 .description_info--container div {
   height: 4px;
   width: 16px;
