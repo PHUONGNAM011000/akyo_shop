@@ -21,12 +21,12 @@ const Cart = (props) => {
     <Drawer
       anchor={'right'}
       open={true}
-      onClose={() => props.setOpenCart(false)}
+      onClose={() => dispatch(actionsCart.closeCart())}
     >
       <div className={classes.cart}>
         <div className={classes.header_cart}>
           <div className={classes.close}>
-            <GrClose onClick={() => props.setOpenCart(false)} />
+            <GrClose onClick={() => dispatch(actionsCart.closeCart())} />
           </div>
           <div className={classes.card}>GIỎ HÀNG</div>
         </div>
@@ -69,9 +69,16 @@ const Cart = (props) => {
         </div>
         <div className={classes.actions}>
           <button>XEM GIỎ HÀNG</button>
-          <button onClick={() => history.push('/checkout')}>THANH TOÁN </button>
-          <button onClick={() => props.setOpenCart(false)}>
-            CONTINUE SHOPPING
+          <button
+            onClick={() => {
+              dispatch(actionsCart.closeCart());
+              history.push('/checkout');
+            }}
+          >
+            THANH TOÁN{' '}
+          </button>
+          <button onClick={() => dispatch(actionsCart.closeCart())}>
+            TIẾP TỤC MUA SẮM
           </button>
         </div>
       </div>

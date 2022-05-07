@@ -7,10 +7,15 @@ import Product from './Pages/Product/Product';
 import Demo from './demo';
 import Checkout from './Pages/Payment/Checkout';
 import NavBar from './Components/NavBar/NavBar';
+import { useSelector } from 'react-redux';
+import Cart from './Components/Cart/Cart';
 
 function App() {
+  const openCart = useSelector((state) => state.cart.openCart);
+
   return (
     <>
+      {openCart && <Cart />}
       <NavBar />
       <Switch>
         <Route path="/login">
