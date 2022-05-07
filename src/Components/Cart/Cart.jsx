@@ -41,13 +41,13 @@ const Cart = (props) => {
                     width: '100%',
                     height: '100%',
                   }}
-                  src={item.image}
+                  src={`${item.image}-150x150.jpg`}
                 />
               </div>
               <div className={classes.info}>
                 <div className={classes.name}>{item.name}</div>
                 <div className={classes.price}>
-                  {item.quality} x {item.price}₫
+                  {item.quality} x {item.price}.000₫
                 </div>
               </div>
             </div>
@@ -61,7 +61,7 @@ const Cart = (props) => {
         ))}
 
         <div className={classes.amount}>
-          <div>Tổng số phụ:</div>
+          <div>Tổng tiền:</div>
           <div>
             {totalAmount}
             {totalAmount !== 0 && <span>.000đ</span>}

@@ -6,35 +6,36 @@ import Home from './Pages/Home/Home';
 import Product from './Pages/Product/Product';
 import Demo from './demo';
 import Checkout from './Pages/Payment/Checkout';
+import NavBar from './Components/NavBar/NavBar';
 
 function App() {
   return (
-    <Switch>
-      <Route path="/login">
-        <Login />
-      </Route>
-      <Route path="/register">
-        <Register />
-      </Route>
-      <Route path="/home">
-        <Home />
-      </Route>
-      {/* <Route path="/product">
-        <Product />
-      </Route> */}
-      <Route path="/product/:productId">
-        <Product />
-      </Route>
-      <Route path="/demo">
-        <Demo />
-      </Route>
-      <Route path="/checkout">
-        <Checkout />
-      </Route>
-      <Route path="/">
-        <Home />
-      </Route>
-    </Switch>
+    <>
+      <NavBar />
+      <Switch>
+        <Route path="/login">
+          <Login />
+        </Route>
+        <Route path="/register">
+          <Register />
+        </Route>
+        <Route path="/home">
+          <Home />
+        </Route>
+        <Route path="/product/:productId">
+          <Product />
+        </Route>
+        <Route path="/demo">
+          <Demo />
+        </Route>
+        <Route path="/checkout">
+          <Checkout />
+        </Route>
+        <Route path="/">
+          <Home />
+        </Route>
+      </Switch>
+    </>
   );
 }
 

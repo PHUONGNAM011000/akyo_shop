@@ -1,7 +1,6 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
-import NavBar from '../../Components/NavBar/NavBar';
 import Footer from '../../Components/Footer/Footer';
 import Hero from './Hero/Hero';
 import About from './About/About';
@@ -86,7 +85,6 @@ export default function Home() {
 
   return (
     <React.Fragment>
-      <NavBar />
       <main>
         <Hero classes={classes} />
         <Container className={classes.cardGrid} maxWidth="md">

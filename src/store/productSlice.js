@@ -12,6 +12,7 @@ const productSlice = createSlice({
     description: true,
     info: true,
     liked: false,
+    amount: 1,
   },
   reducers: {
     image1Changed(state) {
@@ -61,6 +62,7 @@ const productSlice = createSlice({
       state.description = true;
       state.info = true;
       state.liked = false;
+      state.amount = 1;
     },
     changedDescription(state) {
       state.description = !state.description;
@@ -70,6 +72,16 @@ const productSlice = createSlice({
     },
     changedLiked(state) {
       state.liked = !state.liked;
+    },
+    amountToIncrement(state) {
+      state.amount++;
+    },
+    amountToDecrement(state) {
+      if (state.amount === 1) return;
+      state.amount--;
+    },
+    amountChanged(state, action) {
+      state.amount = action.payload;
     },
   },
 });

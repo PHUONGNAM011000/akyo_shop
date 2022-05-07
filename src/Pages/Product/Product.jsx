@@ -1,5 +1,4 @@
 import React from 'react';
-import NavBar from '../../Components/NavBar/NavBar';
 import About from './About/About';
 import Description from './Description/Description';
 import Footer from '../../Components/Footer/Footer';
@@ -25,7 +24,6 @@ const Product = () => {
 
   return (
     <>
-      <NavBar />
       <About product={product} />
       <Description />
       <Footer />
