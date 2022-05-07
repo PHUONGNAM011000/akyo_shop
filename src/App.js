@@ -32,7 +32,7 @@ function App() {
         <Checkout />
       </Route>
       <Route path="/">
-        <Login />
+        <Home />
       </Route>
     </Switch>
   );
