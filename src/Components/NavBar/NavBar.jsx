@@ -3,6 +3,7 @@ import {
   Avatar,
   Badge,
   CssBaseline,
+  makeStyles,
   Toolbar,
   Typography,
 } from '@material-ui/core';
@@ -13,7 +14,33 @@ import { useState } from 'react';
 import Cart from '../Cart/Cart';
 import { useSelector } from 'react-redux';
 
-const NavBar = ({ classes }) => {
+const useStyles = makeStyles((theme) => ({
+  icon: {
+    marginRight: theme.spacing(2),
+  },
+  footer: {
+    backgroundColor: theme.palette.background.paper,
+    padding: theme.spacing(6),
+  },
+  nameShop: {
+    flexGrow: 1,
+  },
+  cart: {
+    cursor: 'pointer',
+  },
+  appBar: {
+    position: 'sticky',
+    top: '0',
+    zIndex: '100',
+
+    '& svg': {
+      cursor: 'pointer',
+    },
+  },
+}));
+
+const NavBar = () => {
+  const classes = useStyles();
   const [openCart, setOpenCart] = useState(false);
   const productCart = useSelector((state) => state.cart.productCart);
 

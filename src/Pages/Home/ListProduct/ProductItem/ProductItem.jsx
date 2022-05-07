@@ -34,10 +34,16 @@ const ProductItem = ({ classes, card }) => {
           className={classes.cardMedia}
           image={`${card.images.image1}-scaled.jpg.webp`}
           title="Image title"
-          onClick={() => history.push(`/product/${card.id}`)}
+          onClick={() => {
+            history.push(`/product/${card.id}`);
+          }}
         />
         <CardContent className={classes.cardContent}>
-          <Typography onClick={() => history.push(`/product/${card.id}`)}>
+          <Typography
+            onClick={() => {
+              history.push(`/product/${card.id}`);
+            }}
+          >
             {card.name}
           </Typography>
           <div className={classes.textPrice}>

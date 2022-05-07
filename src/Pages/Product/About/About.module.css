@@ -17,6 +17,11 @@
 .img li img {
   width: 100px;
   height: 100px;
+  opacity: 0.5;
+}
+
+.img .opacity {
+  opacity: 1;
 }
 
 .imgMain {

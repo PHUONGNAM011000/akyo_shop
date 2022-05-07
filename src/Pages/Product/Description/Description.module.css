@@ -25,10 +25,15 @@
   cursor: default;
 }
 
-.description_info--container div {
+.description_info--container .decrease {
   height: 4px;
   width: 16px;
   background-color: #fff;
+}
+
+.description_info--container svg {
+  color: #fff;
+  font-size: 32px;
 }
 
 .description_info--container .boxDecrease {

@@ -1,8 +1,17 @@
-import { Typography } from '@material-ui/core';
+import { makeStyles, Typography } from '@material-ui/core';
 import React from 'react';
 import Copyright from '../UI/Copyright';
 
-const Footer = ({ classes }) => {
+const useStyles = makeStyles((theme) => ({
+  footer: {
+    backgroundColor: theme.palette.background.paper,
+    padding: theme.spacing(6),
+  },
+}));
+
+const Footer = () => {
+  const classes = useStyles();
+
   return (
     <footer className={classes.footer}>
       <Typography variant="h6" align="center" gutterBottom>

@@ -9,10 +9,6 @@ import ListProduct from './ListProduct/ListProduct';
 import { useSelector } from 'react-redux';
 
 const useStyles = makeStyles((theme) => ({
-  icon: {
-    marginRight: theme.spacing(2),
-    cursor: 'pointer',
-  },
   heroContent: {
     backgroundImage:
       'url(https://oversizedshop.com.vn/ovs/uploads/2022/02/15.2-1-2048x907.jpg)',
@@ -61,10 +57,6 @@ const useStyles = makeStyles((theme) => ({
       },
     },
   },
-  footer: {
-    backgroundColor: theme.palette.background.paper,
-    padding: theme.spacing(6),
-  },
   textPrice: {
     textAlign: 'center',
     color: '#808080',
@@ -86,18 +78,6 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: 'space-around',
     marginBottom: '2rem',
   },
-  cart: {
-    cursor: 'pointer',
-  },
-  appBar: {
-    position: 'sticky',
-    top: '0',
-    zIndex: '100',
-
-    '& svg': {
-      cursor: 'pointer',
-    },
-  },
 }));
 
 export default function Home() {
@@ -106,7 +86,7 @@ export default function Home() {
 
   return (
     <React.Fragment>
-      <NavBar classes={classes} />
+      <NavBar />
       <main>
         <Hero classes={classes} />
         <Container className={classes.cardGrid} maxWidth="md">
@@ -114,7 +94,7 @@ export default function Home() {
           <ListProduct dataProduct={productHome} classes={classes} />
         </Container>
       </main>
-      <Footer classes={classes} />
+      <Footer />
     </React.Fragment>
   );
 }
