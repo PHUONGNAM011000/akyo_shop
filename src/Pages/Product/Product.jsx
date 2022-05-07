@@ -1,4 +1,3 @@
-import { makeStyles } from '@material-ui/core';
 import React from 'react';
 import NavBar from '../../Components/NavBar/NavBar';
 import About from './About/About';
@@ -22,7 +21,7 @@ const Product = () => {
   useEffect(() => {
     dispatch(actionsProduct.imageScaledChanged(product[0].images.image1));
     dispatch(actionsProduct.defaultProduct());
-  }, []);
+  }, [dispatch, product]);
 
   return (
     <>
