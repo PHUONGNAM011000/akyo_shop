@@ -17,6 +17,7 @@ const ProductItem = ({ classes, card }) => {
   const dispatch = useDispatch();
 
   const addToCartHandler = () => {
+    dispatch(actionsCart.openCart());
     dispatch(
       actionsCart.addCart({
         id: card.id,

@@ -45,7 +45,7 @@ export default function Review() {
   return (
     <React.Fragment>
       <Typography variant="h6" gutterBottom>
-        Order summary
+        Tóm tắt theo thứ tự
       </Typography>
       <List disablePadding>
         {products.map((product) => (
@@ -55,7 +55,7 @@ export default function Review() {
           </ListItem>
         ))}
         <ListItem className={classes.listItem}>
-          <ListItemText primary="Total" />
+          <ListItemText primary="Tổng" />
           <Typography variant="subtitle1" className={classes.total}>
             $34.06
           </Typography>
@@ -64,14 +64,14 @@ export default function Review() {
       <Grid container spacing={2}>
         <Grid item xs={12} sm={6}>
           <Typography variant="h6" gutterBottom className={classes.title}>
-            Shipping
+            Địa chỉ giao hàng
           </Typography>
           <Typography gutterBottom>John Smith</Typography>
           <Typography gutterBottom>{addresses.join(', ')}</Typography>
         </Grid>
         <Grid item container direction="column" xs={12} sm={6}>
           <Typography variant="h6" gutterBottom className={classes.title}>
-            Payment details
+            Chi tiết thanh toán
           </Typography>
           <Grid container>
             {payments.map((payment) => (

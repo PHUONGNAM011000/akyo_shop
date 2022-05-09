@@ -6,6 +6,10 @@ import Drawer from '@material-ui/core/Drawer';
 import { useHistory } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { actionsCart } from '../../store/cartSlice';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
 
 const Cart = (props) => {
   const history = useHistory();
@@ -22,6 +26,7 @@ const Cart = (props) => {
       anchor={'right'}
       open={true}
       onClose={() => dispatch(actionsCart.closeCart())}
+      role="presentation"
     >
       <div className={classes.cart}>
         <div className={classes.header_cart}>
@@ -30,57 +35,66 @@ const Cart = (props) => {
           </div>
           <div className={classes.card}>GIỎ HÀNG</div>
         </div>
-        {productCart.map((item) => (
-          <div className={classes.cart_info} key={item.id}>
-            <div className={classes.product}>
-              <div className={classes.avatar}>
-                <Avatar
-                  alt="Remy Sharp"
-                  variant="square"
-                  style={{
-                    width: '100%',
-                    height: '100%',
-                  }}
-                  src={`${item.image}-150x150.jpg`}
-                />
-              </div>
-              <div className={classes.info}>
-                <div className={classes.name}>{item.name}</div>
-                <div className={classes.price}>
-                  {item.quality} x {item.price}.000₫
+        {productCart.length === 0 && (
+          <p className={classes.titleEmpty}>
+            Không có sản phẩm nào trong giỏ hàng.
+          </p>
+        )}
+        {productCart.length > 0 && (
+          <>
+            {productCart.map((item) => (
+              <div className={classes.cart_info} key={item.id}>
+                <div className={classes.product}>
+                  <div className={classes.avatar}>
+                    <Avatar
+                      alt="Remy Sharp"
+                      variant="square"
+                      style={{
+                        width: '100%',
+                        height: '100%',
+                      }}
+                      src={`${item.image}-150x150.jpg`}
+                    />
+                  </div>
+                  <div className={classes.info}>
+                    <div className={classes.name}>{item.name}</div>
+                    <div className={classes.price}>
+                      {item.quality} x {item.price}.000₫
+                    </div>
+                  </div>
+                </div>
+                <div
+                  className={classes.closeProduct}
+                  onClick={() => removeCartHandler(item.id)}
+                >
+                  <GrClose />
                 </div>
               </div>
-            </div>
-            <div
-              className={classes.closeProduct}
-              onClick={() => removeCartHandler(item.id)}
-            >
-              <GrClose />
-            </div>
-          </div>
-        ))}
+            ))}
 
-        <div className={classes.amount}>
-          <div>Tổng tiền:</div>
-          <div>
-            {totalAmount}
-            {totalAmount !== 0 && <span>.000đ</span>}
-          </div>
-        </div>
-        <div className={classes.actions}>
-          <button>XEM GIỎ HÀNG</button>
-          <button
-            onClick={() => {
-              dispatch(actionsCart.closeCart());
-              history.push('/checkout');
-            }}
-          >
-            THANH TOÁN{' '}
-          </button>
-          <button onClick={() => dispatch(actionsCart.closeCart())}>
-            TIẾP TỤC MUA SẮM
-          </button>
-        </div>
+            <div className={classes.amount}>
+              <div>Tổng tiền:</div>
+              <div>
+                {totalAmount}
+                {totalAmount !== 0 && <span>.000đ</span>}
+              </div>
+            </div>
+            <div className={classes.actions}>
+              <button>XEM GIỎ HÀNG</button>
+              <button
+                onClick={() => {
+                  dispatch(actionsCart.closeCart());
+                  history.push('/checkout');
+                }}
+              >
+                THANH TOÁN{' '}
+              </button>
+              <button onClick={() => dispatch(actionsCart.closeCart())}>
+                TIẾP TỤC MUA SẮM
+              </button>
+            </div>
+          </>
+        )}
       </div>
     </Drawer>
   );

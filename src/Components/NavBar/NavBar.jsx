@@ -12,6 +12,7 @@ import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import LocalMallIcon from '@material-ui/icons/LocalMall';
 import { useDispatch, useSelector } from 'react-redux';
 import { actionsCart } from '../../store/cartSlice';
+import { useHistory } from 'react-router-dom';
 
 const useStyles = makeStyles((theme) => ({
   icon: {
@@ -23,6 +24,8 @@ const useStyles = makeStyles((theme) => ({
   },
   nameShop: {
     flexGrow: 1,
+    cursor: 'pointer',
+    marginTop: '10px',
   },
   cart: {
     cursor: 'pointer',
@@ -42,6 +45,7 @@ const NavBar = () => {
   const classes = useStyles();
   const dispatch = useDispatch();
   const productCart = useSelector((state) => state.cart.productCart);
+  let history = useHistory();
 
   const qualityProduct = productCart.reduce((acc, item) => {
     return acc + item.quality;
@@ -52,12 +56,16 @@ const NavBar = () => {
       <CssBaseline />
       <AppBar position="relative">
         <Toolbar>
-          <LocalMallIcon className={classes.icon} />
+          <LocalMallIcon
+            className={classes.icon}
+            onClick={() => history.push('/')}
+          />
           <Typography
             variant="h6"
             color="inherit"
             noWrap
             className={classes.nameShop}
+            onClick={() => history.push('/')}
           >
             Akyo Shop
           </Typography>

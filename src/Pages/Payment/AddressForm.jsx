@@ -9,7 +9,7 @@ export default function AddressForm() {
   return (
     <React.Fragment>
       <Typography variant="h6" gutterBottom>
-        Shipping address
+        Địa chỉ giao hàng
       </Typography>
       <Grid container spacing={3}>
         <Grid item xs={12} sm={6}>
@@ -17,7 +17,7 @@ export default function AddressForm() {
             required
             id="firstName"
             name="firstName"
-            label="First name"
+            label="Họ và Tên"
             fullWidth
             autoComplete="given-name"
           />
@@ -37,18 +37,9 @@ export default function AddressForm() {
             required
             id="address1"
             name="address1"
-            label="Address line 1"
+            label="Địa chỉ (số nhà tên đường)"
             fullWidth
             autoComplete="shipping address-line1"
-          />
-        </Grid>
-        <Grid item xs={12}>
-          <TextField
-            id="address2"
-            name="address2"
-            label="Address line 2"
-            fullWidth
-            autoComplete="shipping address-line2"
           />
         </Grid>
         <Grid item xs={12} sm={6}>
@@ -56,45 +47,20 @@ export default function AddressForm() {
             required
             id="city"
             name="city"
-            label="City"
+            label="Thành Phố"
             fullWidth
             autoComplete="shipping address-level2"
           />
         </Grid>
         <Grid item xs={12} sm={6}>
-          <TextField
-            id="state"
-            name="state"
-            label="State/Province/Region"
-            fullWidth
-          />
-        </Grid>
-        <Grid item xs={12} sm={6}>
-          <TextField
-            required
-            id="zip"
-            name="zip"
-            label="Zip / Postal code"
-            fullWidth
-            autoComplete="shipping postal-code"
-          />
-        </Grid>
-        <Grid item xs={12} sm={6}>
-          <TextField
-            required
-            id="country"
-            name="country"
-            label="Country"
-            fullWidth
-            autoComplete="shipping country"
-          />
+          <TextField id="state" name="state" label="Quận/ Huyện" fullWidth />
         </Grid>
         <Grid item xs={12}>
           <FormControlLabel
             control={
               <Checkbox color="secondary" name="saveAddress" value="yes" />
             }
-            label="Use this address for payment details"
+            label="Sử dụng địa chỉ này để biết chi tiết thanh toán"
           />
         </Grid>
       </Grid>

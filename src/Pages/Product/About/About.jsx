@@ -18,6 +18,7 @@ const About = (props) => {
   const amount = useSelector((state) => state.product.amount);
 
   const addToCartHandler = (item) => {
+    dispatch(actionsCart.openCart());
     dispatch(
       actionsCart.addToCartWithQuantity({
         id: item.id,

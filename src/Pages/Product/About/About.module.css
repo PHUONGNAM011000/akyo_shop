@@ -119,4 +119,10 @@
 .description {
   font-weight: bold;
   margin-bottom: 2rem;
+  transition: color 0.5s ease;
+  cursor: pointer;
+}
+
+.description span:hover {
+  color: #125e7e;
 }

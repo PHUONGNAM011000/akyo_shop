@@ -33,7 +33,7 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: theme.spacing(2),
     marginRight: theme.spacing(2),
     [theme.breakpoints.up(600 + theme.spacing(2) * 2)]: {
-      width: 600,
+      width: 650,
       marginLeft: 'auto',
       marginRight: 'auto',
     },
@@ -61,7 +61,11 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const steps = ['Shipping address', 'Payment details', 'Review your order'];
+const steps = [
+  'Địa chỉ giao hàng',
+  'Chi tiết thanh toán',
+  'Xem lại đơn hàng của bạn',
+];
 
 function getStepContent(step) {
   switch (step) {
@@ -120,7 +124,7 @@ export default function Checkout() {
                 <div className={classes.buttons}>
                   {activeStep !== 0 && (
                     <Button onClick={handleBack} className={classes.button}>
-                      Back
+                      Trở lại
                     </Button>
                   )}
                   <Button
@@ -129,7 +133,7 @@ export default function Checkout() {
                     onClick={handleNext}
                     className={classes.button}
                   >
-                    {activeStep === steps.length - 1 ? 'Place order' : 'Next'}
+                    {activeStep === steps.length - 1 ? 'Đặt hàng' : 'Tiếp theo'}
                   </Button>
                 </div>
               </React.Fragment>
