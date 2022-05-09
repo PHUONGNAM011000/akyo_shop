@@ -7,11 +7,15 @@ import { Provider } from 'react-redux';
 import store from './store';
 
 ReactDOM.render(
-  <Router>
-    <Provider store={store}>
-      <App />
-    </Provider>
-  </Router>,
+  <>
+    <Router>
+      <Provider store={store}>
+        <App />
+      </Provider>
+    </Router>
+    <div id="fb-root"></div>
+    <div id="fb-customer-chat" className="fb-customerchat"></div>
+  </>,
   document.getElementById('root')
 );
 
