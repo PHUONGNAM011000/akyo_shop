@@ -11,9 +11,6 @@ ReactDOM.render(
     <Provider store={store}>
       <App />
     </Provider>
-
-    <div id="fb-root"></div>
-    <div id="fb-customer-chat" className="fb-customerchat"></div>
   </Router>,
   document.getElementById('root')
 );
